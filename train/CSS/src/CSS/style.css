@@ -1,0 +1,83 @@
+.div_box {
+    background: rgba(101, 221, 90, 0.5) url('../../../HTML/image.jpg') top Left/100% auto fixed no-repeat;
+    width: 100%;
+    height: 300px;
+    color: aqua;
+}
+.span_span {
+    background:tomato;
+}
+
+body {
+    height: 3000px;
+}
+.wrap {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 0px;
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    gap: 20px;
+    justify-content: center;
+
+}
+.div_box2 {
+    width: 150px;
+    border: 1px solid rgb(151, 9, 33);
+    padding: 2% 0 2% 0;
+    outline: 1px solid tomato;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 10px red;
+    transform: translate(10px) rotate(0deg) scale(1) skew(0deg, 0deg);
+    background-image: linear-gradient(to bottom right, tomato, red);
+    vertical-align: top;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    line-height: 30px;
+    word-spacing: 5px;
+    font-style:italic;
+    text-transform: capitalize;
+    transition: 1s;
+}
+
+.div_box2:hover {
+    transform: rotate(40deg) skew(10deg, 10deg);
+    cursor:pointer;
+}
+
+.field {
+    width: 135px;
+}
+.link {
+    color: #000;
+}
+.link:hover{
+    color: rgb(23, 230, 34);
+}
+
+.field:hover{
+   border: 2px solid green;
+}
+.field:focus{
+   outline: 2px solid rgb(24, 117, 223);
+}
+
+.btn:active {
+    background: aqua;
+    color: white;
+}
+
+.div_box2:last-child() {
+    padding:0;
+}
+.div_box2:nth-child(3n) {
+    padding:2% 0 2% 0;
+}
+
+@media (max-width: 600px)
+{
+    .div_box {
+        background: lightgreen;
+    }
+}
